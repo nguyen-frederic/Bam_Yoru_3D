@@ -50,6 +50,7 @@ public class Player_spawn : MonoBehaviour
         {
             GameObject particule =  Instantiate(particules, transform.position, Quaternion.identity);
             Destroy(particule, 2f);
+            Player_vie.Instance.Degat(1);
             Destroy(other.gameObject);
         }
     }
