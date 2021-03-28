@@ -28,14 +28,17 @@ public class Player_spawn : MonoBehaviour
         {
             if (Input.GetButtonDown("Cube"))
             {
+                Spell_charge.Instance.Modif_Mesh(cube.GetComponent<MeshFilter>().sharedMesh);
                 Instantiate(cube, transform.position, Quaternion.identity);
             }
             if (Input.GetButtonDown("Sphere"))
             {
+                Spell_charge.Instance.Modif_Mesh(sphere.GetComponent<MeshFilter>().sharedMesh);
                 Instantiate(sphere, transform.position, Quaternion.identity);
             }
             if (Input.GetButtonDown("Pyramide"))
             {
+                Spell_charge.Instance.Modif_Mesh(pyramide.GetComponent<MeshFilter>().sharedMesh);
                 Instantiate(pyramide, transform.position, Quaternion.identity);
             }
         }
